@@ -1,34 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&family=Lato:ital,wght@0,100;0,300;1,400&family=Poppins:wght@200;300;400&display=swap');
 body{
-    background-image: url("https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/sky-moon-bg%5B1%5D.png");
-    width: 100vw;
-    height: 100vh;
-    background-size: 100% 100%;
-    overflow: hidden;
+background-image: url("https://kq-storage.s3.ap-south-1.amazonaws.com/Github/astronaut/sky-moon-bg%5B1%5D.png");
+width: 100vw;
+height: 100vh;
+background-size: 100% 100%;
+overflow: hidden;
+font-family: 'Kanit', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
+
 *{
-    margin: 0px;
-    padding: 0px;
+margin: 0px;
+padding: 0px;
 }
+
 #astronaut-1{
-    width: 500px;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    animation: floating 5s infinite;
-}
-#astronaut-2{
-    width: 500px;
-    position: absolute;
-    top: 35%;
-    left: 30%;
-    animation: floating 5s infinite;
+width: 500px;
+position: absolute;
+top: 5%;
+left: 5%;
+animation: floating 5s infinite;
 }
 
 @keyframes floating {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(30px);
-    }
+0%{
+transform:translateY(0px)
+}
+50%{
+transform:translateY(30px)
+}
+}
+
+#astronaut-2{
+width: 500px;
+position: absolute;
+top: 35%;
+left: 30%;
+animation: floating 5s infinite;
+}
+
+form{
+position: absolute;
+top: 15%;
+left: 60%;
+width: 450px;
+background-color: white;
+padding: 0 75px;
+border-radius: 5px;
+}
+
+label{
+display: block;
+}
+
+.block-display{
+display: block;
+}
+
+h1{
+font-size: 26px;
+width: 280px;
+text-align: center;
+margin: 20px auto;
 }
